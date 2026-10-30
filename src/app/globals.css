@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f3ea;
+  --surface: #fffdf7;
+  --foreground: #1b2a21;
+  --muted: #5a6a5f;
+  --line: #e1dacb;
+  --brand: #1f6b46;
+  --brand-ink: #ffffff;
+  --brand-soft: #e2eee4;
+  --allergen: #b4501c;
+  --allergen-soft: #f7e4d6;
+  --limit: #8a6a0c;
+  --limit-soft: #f4ecd0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #101612;
+    --surface: #17201a;
+    --foreground: #e9ede6;
+    --muted: #9daba1;
+    --line: #2a362e;
+    --brand: #6fcf97;
+    --brand-ink: #0d1a12;
+    --brand-soft: #1d3326;
+    --allergen: #f0a072;
+    --allergen-soft: #3a2519;
+    --limit: #e3c565;
+    --limit-soft: #332c15;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-soft: var(--brand-soft);
+  --color-allergen: var(--allergen);
+  --color-allergen-soft: var(--allergen-soft);
+  --color-limit: var(--limit);
+  --color-limit-soft: var(--limit-soft);
+  --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-fraunces);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
